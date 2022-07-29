@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- FontAwesome 6.1.1 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <h3>Bài tập 1: Thay đổi màu sắc</h3>
+      <i
+        id="home"
+        class="fa fa-home"
+        aria-hidden="true"
+        style="font-size: 200px"
+      ></i>
+      <div id="colors" class="colors">
+        <!-- <button class="btn mt-2 me-2" style="background-color: red">Red</button> -->
+      </div>
+    </div>
+    <hr />
+    <h3>Bài tập 2: Xây dựng form nhập liệu và hiển thị thông tin nhân viên</h3>
+    <div class="row">
+      <div class="col-6">
+        <form action="" id="frmNhanVien">
+          <div class="form-group my-2">
+            <label for="maNhanVien">Mã nhân viên</label>
+            <input type="text" id="maNhanVien" />
+          </div>
+          <div class="form-group my-2">
+            <label for="tenNhanVien">Tên nhân viên</label>
+            <input type="text" id="tenNhanVien" />
+          </div>
+          <div class="form-group my-2">
+            <label for="luongCB">Lương cơ bản</label>
+            <input type="text" id="luongCB" />
+          </div>
+          <div class="form-group">
+            <label for="chucVu">Chức vụ</label>
+            <select name="" id="chucVu">
+              <option>GiamDoc</option>
+              <option>NhanVien</option>
+            </select>
+          </div>
+          <div class="form-group mt-2">
+            <button type="submit" class="btn btn-success" id="btnHienThi">
+              Hiển thị
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- end col -->
+      <div class="col-6">
+        <h3>Talbe nhân viên</h3>
+        <table class="table bg-dark text-white" id="tbNhanVien">
+          <tr>
+            <th>Mã nhân viên</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Tên nhân viên</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Lương cơ bản</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Chức vụ</th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <h3 style="text-align: center;">Callback function</h3>
+    <div id="content"></div>
+    <style>
+      /* check xem có bao nhiêu input và select để dùng cho querySelectorAll */
+      #frmNhanVien input,
+      #frmNhanVien select {
+        background-color: red;
+      }
+    </style>
+    
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!-- mainjs -->
+    <script src="./main.js"></script>
+  </body>
+</html>
